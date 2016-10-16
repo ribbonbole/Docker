@@ -1,0 +1,7 @@
+FROM node:4.6.0-slim
+RUN mkdir /app
+ADD nodekick /app
+WORKDIR /app
+RUN npm install
+EXPOSE 3000
+CMD node server.js
